@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aware.plugin.inorout">
+
+    <uses-permission android:name="com.aware.READ_CONTEXT_DATA"  />
+    <uses-permission android:name="com.aware.WRITE_CONTEXT_DATA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher">
+
+        <activity
+            android:name="com.aware.plugin.inorout.Settings"
+            android:label="@string/app_name"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN">
+                </action>
+                <category
+                    android:name="android.intent.category.LAUNCHER">
+                </category>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:exported="true"
+            android:name="com.aware.plugin.inorout.Plugin"
+            android:label="@string/app_name">
+        </service>
+        <provider
+            android:name="com.aware.plugin.inorout.Provider"
+            android:authorities="${applicationId}.provider.inorout"
+            android:exported="true"
+            android:readPermission="com.aware.READ_CONTEXT_DATA"
+            android:writePermission="com.aware.WRITE_CONTEXT_DATA"/>
+
+    </application>
+
+</manifest>

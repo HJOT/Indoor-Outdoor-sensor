@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Signal1"
+        android:id="@+id/signalText1"
+        android:enabled="true"
+        android:textColor="#7B68EE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Signal2"
+        android:id="@+id/signalText2"
+        android:enabled="true"
+        android:textColor="#7B68EE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Battery"
+        android:id="@+id/battText"
+        android:enabled="true"
+        android:textColor="#7B68EE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Proximity"
+        android:id="@+id/proxiText"
+        android:enabled="true"
+        android:textColor="#7B68EE"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Light"
+        android:id="@+id/lightText"
+        android:enabled="true"
+        android:textColor="#7B68EE"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OutText"
+        android:id="@+id/outText"
+        android:enabled="true"
+        android:textColor="#1E90FF"
+        android:width="222dp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="OutText"
+        android:id="@+id/outtimeText"
+        android:enabled="true"
+        android:textColor="#1E90FF"
+        android:width="222dp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="InText"
+        android:id="@+id/inText"
+        android:enabled="true"
+        android:textColor="#B22222"
+        android:width="222dp"
+        android:visibility="visible" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="InText"
+        android:id="@+id/intimeText"
+        android:enabled="true"
+        android:textColor="#B22222"
+        android:width="222dp"
+        android:visibility="visible" />
+</LinearLayout>
